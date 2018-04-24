@@ -5,6 +5,7 @@ import { Container, Content, List, ListItem, Body, Left, Text, Icon } from 'nati
 import { Actions } from 'react-native-router-flux';
 import Header from './Header';
 
+// TODO: NEED ONPRESS ACTION FOR MYCARDS LINE 29
 const Profile = ({ member, logout }) => (
   <Container>
     <Content>
@@ -24,6 +25,14 @@ const Profile = ({ member, logout }) => (
               </Left>
               <Body>
                 <Text>Update My Profile</Text>
+              </Body>
+            </ListItem>
+            <ListItem icon> 
+              <Left>
+                <Icon name="card" />
+              </Left>
+              <Body>
+                <Text>My Cards</Text>
               </Body>
             </ListItem>
             <ListItem onPress={logout} icon>
